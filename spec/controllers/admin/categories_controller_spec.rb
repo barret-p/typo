@@ -15,6 +15,11 @@ describe Admin::CategoriesController do
     get :index
     assert_response :redirect, :action => 'index'
   end
+  
+  it "test_new" do
+    get :index
+    assert_response :redirect, :action => 'new'
+  end
 
   describe "test_edit" do
     before(:each) do
